@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace ChocolateyTechnicalInterview
 {
-    public class Program
+    class CheckPalindrome
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
             string[] array = { "madam", "step on no pets", "book"};
             foreach (string str in array)
             {
-                Console.WriteLine("{0} is {1}", str, chkPalindrome(str));
+                Console.WriteLine($"{str} is {chkPalindrome(str)}.");
             }
         }
 
@@ -29,5 +29,7 @@ namespace ChocolateyTechnicalInterview
             }
             return "Palindrome";
         }
+
+        //reference: https://www.dotnetperls.com/palindrome
     }
 }
