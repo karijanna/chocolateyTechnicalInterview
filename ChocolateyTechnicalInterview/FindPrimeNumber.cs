@@ -8,19 +8,19 @@ namespace ChocolateyTechnicalInterview
 {
     public class FindPrimeNumber
     {
-        internal static bool FindPrime(int number)
+        internal static string FindPrime(int number)
         {
             if (number <= 1)
             {
-                return false;
+                return "Not Prime";
             }
             else if (number == 2)
             {
-                return true;
+                return "Prime";
             }
             else if (number % 2 == 0)
             {
-                return false;
+                return "Not Prime";
             }
 
             int bounds = (int)Math.Floor(Math.Sqrt(number));
@@ -29,10 +29,10 @@ namespace ChocolateyTechnicalInterview
             {
                 if (number % i == 0)
                 {
-                    return false;
+                    return "Not Prime";
                 }
             }
-            return true;
+            return "Prime";
         }
     }
 }
