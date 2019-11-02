@@ -18,11 +18,18 @@ namespace ChocolateyTechnicalInterview
 
             Console.WriteLine("\n");
 
-            int[] array2 = new int[] { 20, 15, 3, 6, 2 };
+            int[] array2 = new int[] { 20, 15, 3, 6, 2, 17 };
             foreach (int i in array2)
             {
                 Console.WriteLine($"{i} is {FindPrimeNumber.FindPrime(i)}.");
             }
+
+            Console.WriteLine("\n");
+
+            string myStr = "Welcome to Chocolatey corner";
+            string myStr2 = "This is a sample string";
+            Console.WriteLine(ReverseWordsInString.ReverseWordOrder(myStr));
+            Console.WriteLine(ReverseWordsInString.ReverseWordOrder(myStr2));
         }
     }
 }

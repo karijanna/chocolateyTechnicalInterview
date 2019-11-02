@@ -8,7 +8,7 @@ namespace ChocolateyTechnicalInterview
 {
     public class FindPrimeNumber
     {
-        public static bool FindPrime(int number)
+        internal static bool FindPrime(int number)
         {
             if (number <= 1)
             {
@@ -25,7 +25,7 @@ namespace ChocolateyTechnicalInterview
 
             int bounds = (int)Math.Floor(Math.Sqrt(number));
 
-            for (int i = 3; i < bounds; i+=2)
+            for (int i = 3; i <= bounds; i+=2)
             {
                 if (number % i == 0)
                 {
