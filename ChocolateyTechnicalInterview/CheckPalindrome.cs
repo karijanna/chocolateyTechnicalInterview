@@ -6,17 +6,8 @@ using System.Threading.Tasks;
 
 namespace ChocolateyTechnicalInterview
 {
-    class CheckPalindrome
+    public class CheckPalindrome
     {
-        static void Main(string[] args)
-        {
-            string[] array = { "madam", "step on no pets", "book"};
-            foreach (string str in array)
-            {
-                Console.WriteLine($"{str} is {chkPalindrome(str)}.");
-            }
-        }
-
         internal static string chkPalindrome(string str)
         {
             int length = str.Length;
@@ -29,7 +20,7 @@ namespace ChocolateyTechnicalInterview
             }
             return "Palindrome";
         }
-
-        //reference: https://www.dotnetperls.com/palindrome
     }
 }
+
+//reference: https://www.dotnetperls.com/palindrome
